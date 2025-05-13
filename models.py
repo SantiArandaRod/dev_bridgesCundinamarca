@@ -1,0 +1,21 @@
+from pydantic import BaseModel, Field
+from typing import Optional
+class Bridge(BaseModel):
+    ##X: float = Field(...)
+    ##Y: float = Field(...)
+    OBJECTID: int = Field(...)
+    TRONCAL: str = Field(...)
+    NUM_TRONCA: int = Field(...)
+    CODIGO_TRAMO: int = Field(...)
+    NOMBRE_TRAMO: str = Field(...)
+    TIPO_OBRA: str = Field(...)
+    ANCHO: float = Field(...)
+    LONGITUD: float = Field(...)
+    PLACA: str = Field(...)
+    BARANDAS: str = Field(...)
+    ESTRIBO_DER: str = Field(...)
+    ESTRIBO_IZQ: str = Field(...)
+    FUENTE: str = Field(...)
+    VIGENCIA: int = Field(...)
+    ID_PUENTE: int = Field(...)
+    RuleID: Optional[int] = Field(None)
